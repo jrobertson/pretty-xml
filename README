@@ -1,0 +1,22 @@
+README
+
+Example
+-------
+
+require 'pretty-xml'
+include PrettyXML
+
+xml = "<a1><b1>testing</b1><c>eating<c1>apple</c1>and cooking</a1>"
+puts write xml
+
+
+output:
+<?xml version="1.0" encoding="UTF-8"?>
+<a1>
+   <b1>testing</b1>
+   <c>
+      eating
+      <c1>apple</c1>
+      and cooking
+   </c>
+</a1>
