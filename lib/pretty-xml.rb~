@@ -2,7 +2,7 @@ require 'nokogiri'
 
 module PrettyXML
 
-def PrettyXML.write(buffer)
+def write(buffer)
 
 xsl =<<XSL
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
