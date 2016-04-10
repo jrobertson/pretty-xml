@@ -1,8 +1,12 @@
+#!/bin/usr/env ruby
+
+# file: pretty-xml.rb
+
 require 'nokogiri'
 
 module PrettyXML
 
-def PrettyXML.write(buffer)
+  def write(buffer)
 
 xsl =<<XSL
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -58,4 +62,6 @@ XSL
     out =  xslt.transform(doc)
     out.to_xml
   end
+  
+  alias print write
 end
