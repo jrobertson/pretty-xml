@@ -63,5 +63,7 @@ XSL
     out.to_xml
   end
   
+  module_function :write
+  
   alias print write
 end
