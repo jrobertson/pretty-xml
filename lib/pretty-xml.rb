@@ -1,4 +1,4 @@
-#!/bin/usr/env ruby
+#!/usr/bin/env ruby
 
 # file: pretty-xml.rb
 
